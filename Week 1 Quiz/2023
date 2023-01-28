@@ -1,0 +1,44 @@
+Week 1 Quiz:
+
+1) What is the value of f(2343) for the function below?
+def f(x):
+    d=0
+    y=1
+    while y <= x:
+        d=d+1
+        y=y*3
+    return(d)
+    
+ANS- 8
+
+2) What is h(53)-h(52), given the definition of h below?
+def h(n):
+    s = 0
+    for i in range(1,n+1):
+        if n%i > 0:
+           s = s+1
+    return(s)
+    
+ANS- 5
+
+3) For what integer value n would g(92,n) return 13?
+def g(m,n):
+    res = 0
+    while m >= n:
+        res = res+1
+        m = m-n
+    return(res)
+    
+ANS- 7
+
+4) Consider the following function mys:
+def mys(m):
+    if m == 1:
+        return(1)
+    else:
+        return(m*mys(m-1))
+
+ANS-  The function terminates for positive n with mys(n) = factorial of n
+Note: if m=0 or if m is negative the function will not terminate
+
+For explanation watch videos at https://www.youtube.com/channel/UC5bAzaok-uwWO7CKaHbTVzA
